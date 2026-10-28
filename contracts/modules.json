@@ -1,0 +1,38 @@
+{
+  "v1.0.0": {
+    "inputs": {
+      "service_name": "required",
+      "environment": "required"
+    },
+    "outputs": [
+      "service_id",
+      "deployment_metadata"
+    ],
+    "breaking": false
+  },
+  "v1.1.0": {
+    "inputs": {
+      "service_name": "required",
+      "environment": "required",
+      "owner": "optional"
+    },
+    "outputs": [
+      "service_id",
+      "deployment_metadata",
+      "owner"
+    ],
+    "breaking": false
+  },
+  "v2.0.0": {
+    "inputs": {
+      "workload_id": "required",
+      "environment": "required",
+      "owner": "required"
+    },
+    "outputs": [
+      "workload_ref",
+      "deployment_metadata"
+    ],
+    "breaking": true
+  }
+}
